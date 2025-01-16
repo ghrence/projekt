@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motoservis Alpha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Marhey:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="slike/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">NASLOVNA</a></li>
+                    <li><a href="Usluge.html">USLUGE</a></li>
+                    <li><a href="Lokacija.html">LOKACIJA</a></li>
+                    <li><a href="O%20nama.html">O NAMA</a></li>
+                    <li><a href="Kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>O nama</h1>
+    </section>  
+    
+    <!-- O nama -->
+    <section class="o-nama">
+        <div class="row">
+            <div class="about-colour">
+                <p>
+                    Naš radnik Gabriel Hrenčević, koji je ujedno i vlasnik, posluje od 1996. godine.
+                    <br><br>
+                    Od malih nogu pokazivao je veliku ljubav prema motorima, uvijek tražeći priliku da ih popravi, prilagodi ili unaprijedi.
+                    <br><br>
+                    Njegova ljubav prema motorima nije samo posao – to je način života. Raditi na motorima za njega znači spajati tehničku preciznost s ljubavlju prema slobodi koju motocikli pružaju.
+                    <br><br>
+                    Svaki dan donosi novi izazov, ali kada radiš s ljubavlju i uživaš u onome što radiš, sve ide kako treba i prepreke ne postoje.
+                    <br>
+                    <em>- kaže Gabriel Hrenčević</em>
+                    <br><br>
+                </p>
+                
+            </div>
+            <div class="about-colour">
+                <video width="800" height="400" controls muted poster="slike/video.mp4" class="video-player">
+                    <source src="slike/video.mp4" type="video/mp4">
+                    Vaš preglednik ne podržava video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <p>Copyright &copy;2025 <a href="https://github.com/ghrence/projekt">Gabriel Hrenčević <img src="slike/github2.jpg" title="Github" alt="Github"></a></p>
+    </section>
+    <!-- JavaScript za Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

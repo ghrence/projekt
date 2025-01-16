@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motoservis Alpha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Marhey:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="slike/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">NASLOVNA</a></li>
+                    <li><a href="Usluge.html">USLUGE</a></li>
+                    <li><a href="Lokacija.html">LOKACIJA</a></li>
+                    <li><a href="O%20nama.html">O NAMA</a></li>
+                    <li><a href="Kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Kontakt</h1>
+    </section>  
+
+    <!-- Kontakt sekcija -->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-colour">
+                <div>
+                    <span>
+                        <h5>Ulica Petra Zrinskog 42</h5>
+                        <p>Velika Gorica, Hrvatska</p>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <h5>+385 992825882</h5>
+                        <p>Ponedjeljak-petak 8:00-17:00<br>Subota 08:00-12:00</p>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <h5>motoservis.alpha@gmail.com</h5>
+                        <p>Naš email za upite</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-colour">
+                <form action="">
+                    <label for="fname">Ime*</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Vaše ime..." required>
+                    <label for="sname">Prezime*</label>
+                    <input type="text" id="sname" name="lastname" placeholder="Vaše prezime..." required>
+                    <label for="email">E-mail*</label>
+                    <input id="email" type="email" placeholder="Vaša e-mail adresa..." required>
+                    <label for="message">Poruka*</label>
+                    <textarea id="message" name="message" placeholder="Napišite poruku..." style="height:200px"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Pošalji poruku</button>
+                </form>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Footer -->
+    <section class="footer">
+        <p>Copyright &copy;2025 <a href="https://github.com/ghrence/projekt">Gabriel Hrenčević <img src="slike/github2.jpg" title="Github" alt="Github"></a></p>
+    </section>
+    <!-- JavaScript za Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

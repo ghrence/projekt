@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motoservis Alpha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Marhey:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="slike/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">NASLOVNA</a></li>
+                    <li><a href="Usluge.html">USLUGE</a></li>
+                    <li><a href="Lokacija.html">LOKACIJA</a></li>
+                    <li><a href="O%20nama.html">O NAMA</a></li>
+                    <li><a href="Kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Usluge</h1>
+    </section>
+    
+    <!-- Usluge -->
+    <section class="campus">
+        <div class="row">
+            <div class="campus-col">
+                <img src="slike/mehanic.jpg" alt="Motomehanika">
+                <div class="course-col">
+                    <h3>Motomehanika</h3>
+                    <p>Mehanika je i dalje najveći faktor za bezbrižan i siguran rad motornih vozila. Nudimo sve usluge vezane za mehaničarske radove na motociklima.</p>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="slike/dijagnostika.png" alt="Motodijagnostika">
+                <div class="course-col">
+                    <h3>Motodijagnostika</h3>
+                    <p>Brza dijagnostika - spriječite kvarove prije nego što se pojave.</p>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="slike/pregled.png" alt="Pregled motocikla">
+                <div class="course-col">
+                    <h3>Pregled motocikla</h3>
+                    <p>Ukoliko niste sigurni hoće li Vaš motocikl proći tehnički pregled, tu smo za Vas. Rado ćemo pregledati Vaš motocikl prije tehničkog pregleda i popraviti ako nešto treba.</p>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="slike/vulka.jpg" alt="Vulkanizacija">
+                <div class="course-col">
+                    <h3>Vulkanizacija</h3>
+                    <p>Zamjena guma se vrši nakon veće potrošenosti guma, radi veće sigurnosti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <p>Copyright &copy;2025 <a href="https://github.com/ghrence/projekt">Gabriel Hrenčević <img src="slike/github2.jpg" title="Github" alt="Github"></a></p>
+    </section>
+    
+    <!-- JavaScript za Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
